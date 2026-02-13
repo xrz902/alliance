@@ -14,48 +14,125 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <script src="js/main.js" defer></script>
   </head>
-  <body><nav class="navbar">
-        <a href="./" class="header-logo">
-          <img
-            class="logo-light"
-            src="img/logo-light.svg"
-            alt="Aliance Production"
-          />
-          <img
-            class="logo-dark hidden"
-            src="img/logo-dark.svg"
-            alt="Aliance Production"
-          />
+  <body>
+    <div class="mobile-menu">
+      <ul class="mobile-menu-nav">
+        <li class="mobile-menu-nav-item">
+          <a href="#" class="mobile-menu-link">О компании</a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a href="#" class="mobile-menu-link">Контрактное производство</a>
+          <ul class="mobile-submenu">
+            <li class="mobile-submenu-item">
+              <a class="mobile-submenu-link" href="#">Автомобильная химия</a>
+            </li>
+            <li class="mobile-submenu-item">
+              <a class="mobile-submenu-link" href="#">Бытовая химия</a>
+            </li>
+            <li class="mobile-submenu-item">
+              <a class="mobile-submenu-link" href="#"
+                >Дезинфицирующие средства</a
+              >
+            </li>
+            <li class="mobile-submenu-item">
+              <a class="mobile-submenu-link" href="#">Пищевые аэрозоли</a>
+            </li>
+            <li class="mobile-submenu-item">
+              <a class="mobile-submenu-link" href="#"
+                >Косметическая продукция</a
+              >
+            </li>
+            <li class="mobile-submenu-item">
+              <a class="mobile-submenu-link" href="#">Краски аэрозольные</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a href="#" class="mobile-menu-link">Собственные марки</a>
+          <ul class="mobile-submenu">
+            <li class="mobile-submenu-item">
+              <a class="mobile-submenu-link" href="#">Автохимия AG-Tech</a>
+            </li>
+            <li class="mobile-submenu-item">
+              <a class="mobile-submenu-link" href="#">Автохимия AP</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a href="#" class="mobile-menu-link">Новости</a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a href="#" class="mobile-menu-link">Контакты</a>
+        </li>
+      </ul>
+      <a href="tel:+74996861014" class="mobile-phone">+7 (499) 686-10-14</a>
+      <div class="mobile-info">
+        <img src="img/mobile/mark.svg" alt="mark-logo" />
+        <address class="mobile-info-address">
+          г. Мосвка, Холодильный пер. 4к1с8
+        </address>
+      </div>
+      <div class="mobile-info">
+        <img src="img/mobile/mail.svg" alt="mark-logo" />
+        <a href="mailto: a.dragunov@tdaliance.ru" class="mobile-info-email">
+          a.dragunov@tdaliance.ru
         </a>
-        <ul class="header-nav">
-          <li class="header-nav-item">
-            <a href="#" class="header-nav-link">О компании</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="#" class="header-nav-link">Контрактное производство</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="#" class="header-nav-link">Собственные торговые марки</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="#" class="header-nav-link">Собственные торговые марки</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="#" class="header-nav-link">Контакты</a>
-          </li>
-        </ul>
-        <div class="header-phone">
-          <img src="img/phone.svg" alt="icon: phone" />
-          <a href="tel:+74996861014" class="header-phone-link"
-            >+7 (499) 686-10-14</a
-          >
-        </div>
-        <!-- /.header-phone -->
-        <button class="navbar-button button">Получить консультацию</button>
-      </nav>
-      <!-- /.navbar -->
+      </div>
+      <div class="mobile-info-social">
+        <a href="#"><img src="img/mobile/vk.svg" alt="VKontakte" class="mobile-info-social-link"/></a>
+        <a href="#"><img src="img/mobile/inst.svg" alt="Instagram" /></a>
+      </div>
+    </div>
+    <!-- /.mobile-menu -->
+    <nav class="navbar">
+      <a href="#" class="mobile-menu-toggle">
+        <div class="mobile-menu-line"></div>
+        <div class="mobile-menu-line"></div>
+        <div class="mobile-menu-line"></div>
+      </a>
+      <a href="./" class="header-logo">
+        <img
+          class="logo-light"
+          src="img/logo-light.svg"
+          alt="Aliance Production"
+        />
+        <img
+          class="logo-dark hidden"
+          src="img/logo-dark.svg"
+          alt="Aliance Production"
+        />
+      </a>
+      <ul class="header-nav">
+        <li class="header-nav-item">
+          <a href="#" class="header-nav-link">О компании</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="#" class="header-nav-link">Контрактное производство</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="#" class="header-nav-link">Собственные торговые марки</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="#" class="header-nav-link">Собственные торговые марки</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="#" class="header-nav-link">Контакты</a>
+        </li>
+      </ul>
+      <div class="header-phone">
+        <img src="img/phone.svg" alt="icon: phone" />
+        <a href="tel:+74996861014" class="header-phone-link"
+          >+7 (499) 686-10-14</a
+        >
+      </div>
+      <!-- /.header-phone -->
+      <button class="navbar-button button">
+        <img src="img/phone.svg" alt="icon: phone" class="button-icon" />
+        <span class="button-text">Получить консультацию</span>
+      </button>
+    </nav>
+    <!-- /.navbar -->
     <header class="header header-image">
-
       <div class="container">
         <div class="header-content">
           <div class="seporator"></div>

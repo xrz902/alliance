@@ -440,3 +440,43 @@ body {
     transform: rotate(-45deg) translateY(-9px);
   }
 }
+@media (max-width: 820px) {
+  .container {
+    max-width: 55rem;
+  }
+  .header-title {
+    font-size: 4rem;
+  }
+  .header-content {
+    padding-top: 3rem;
+  }
+    
+  .header-features-item {
+    width: calc(50% - 0.5rem);
+    min-width: 200px;
+  }
+   .header-features-item:not(:last-child) {
+    border-right: 1px solid rgba(235, 235, 240, 0.2);
+  }
+    .header-features {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* для плавного скролла на iOS */
+    gap: 0; /* убираем gap если был */
+  }
+  
+  .header-features-item {
+    flex-shrink: 0; /* чтобы элементы не сжимались */
+  }
+}
+@media (max-width: 680px) {
+  .container {
+   max-width:45rem;
+  }
+  .header-title {
+    font-size: 3rem;
+    margin: 1rem 0;
+  }
+  .header-features {
+    margin-top: 2rem;
+  }
+}

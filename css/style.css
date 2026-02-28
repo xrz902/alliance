@@ -84,18 +84,46 @@ body {
 .header-nav {
   flex-basis: 100%; /*чтобы растянулся на всю длинну */
   display: flex;
+  align-items: center;
+  height: 100%;
   list-style: none;
   padding: 0;
   padding-left: 3.125rem;
   margin: 0;
 }
+.header-nav-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
 .header-nav-item:not(:last-child) {
   margin-right: 3.125rem;
 }
 .header-nav-link {
+  display: flex;
+  height: 100%;
+  align-items: center;
   text-decoration: none;
   font-size: 1rem;
   color: inherit;
+  position: relative;
+}
+.header-nav-link:after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+  background-color:#5c8ee5;
+  transition: width 0.2s;
+  right: 0;
+  left: auto;
+}
+.header-nav-link:hover::after {
+  width: 100%;
+  right: auto;
+  left: 0;
 }
 .header-phone {
   flex-shrink: 0; /*чтобы не сжимался*/
@@ -251,14 +279,17 @@ body {
   color: #5c8ee5;
   font-family: "Noto Sans";
 }
-.steps-link::before {
+.steps-link:before {
   content: "";
   height: 1px;
   background: #5c8ee5;
   width: 2.5rem;
   margin-right: 1.25rem;
+  transition: width 0.2s;
 }
-
+.steps-link:hover:before {
+  width: 60px;
+}
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -267,6 +298,14 @@ body {
   flex-basis: 33%;
   border: 1px solid #ebebf0;
   position: relative;
+  text-decoration: none;
+  transition: border 0.2s;
+}
+.card:hover .card-title {
+  color: #5c8ee5;
+}
+.card:hover {
+  border-color: #5c8ee5;
 }
 .card-image {
   width: 90%;
@@ -285,6 +324,7 @@ body {
   color: #292d33;
   margin-top: 0;
   margin-bottom: .625rem;
+  transition: color 0.2s;
 }
 .card-text {
   font-weight: 400;

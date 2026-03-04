@@ -88,14 +88,14 @@ body {
   height: 100%;
   list-style: none;
   padding: 0;
-  padding-left: 3.125rem;
+  padding-left: 2.82rem;
   margin: 0;
 }
 .header-nav-item {
   height: 100%;
   display: flex;
   align-items: center;
-
+  letter-spacing: .0125rem;
 }
 .header-nav-item:not(:last-child) {
   margin-right: 3.125rem;
@@ -154,7 +154,7 @@ body {
 .navbar-button {
   flex-shrink: 0;
   height: 100%;
-  padding: 1.5625rem 3.125rem;
+  padding: 1.5625rem 2.85rem;
 }
 .header-button {
   height: 100%;

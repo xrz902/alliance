@@ -95,7 +95,7 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  letter-spacing: .0125rem;
+  letter-spacing: 0.0125rem;
 }
 .header-nav-item:not(:last-child) {
   margin-right: 3.125rem;
@@ -110,12 +110,12 @@ body {
   position: relative;
 }
 .header-nav-link:after {
-  content: '';
+  content: "";
   width: 0px;
   height: 2px;
   position: absolute;
   bottom: -1px;
-  background-color:#5c8ee5;
+  background-color: #5c8ee5;
   transition: width 0.2s;
   right: 0;
   left: auto;
@@ -323,7 +323,7 @@ body {
   line-height: 140%;
   color: #292d33;
   margin-top: 0;
-  margin-bottom: .625rem;
+  margin-bottom: 0.625rem;
   transition: color 0.2s;
 }
 .card-text {
@@ -333,15 +333,57 @@ body {
   color: #828a99;
   margin-bottom: 24.625rem;
 }
-@media (max-width: 1860px) {
+.trademark-cards {
+  display: flex;
+}
+.trademark-card {
+  flex-basis: 50%;
+  border: 1px solid #ebebf0;
+  text-decoration: none;
+  transition: border 0.2s;
+  padding: 3.125rem;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  grid-template-rows: auto 2fr;
+  grid-column-gap: 3.125rem;
+  grid-template-areas:
+    "logo title title"
+    "logo text text";
+}
+.trademark-card-logo {
+  width: 100%;
+  grid-area: logo;
+}
+.trademark-card-title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 160%;
+  color: #292d33;
+  font-family: "Noto Sans", sans-serif;
+  grid-area: title;
+}
+.trademark-card-text {
+  margin-top: .625rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+  font-family: "Noto Sans", sans-serif;
+  grid-area: text;
+}
+.trademark-card:hover {
+  border-color: #5c8ee5;
+}
+/* @media (max-width: 1860px) {
   html {
     font-size: 14px;
   }
   .header-image {
     background-position: center;
   }
-}
-@media (max-width: 1675px) {
+} */
+@media (max-width: 1650px) {
   html {
     font-size: 13px;
   }
@@ -377,6 +419,9 @@ body {
   .navbar-button {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+  .trademark-card {
+    grid-template-columns: 100px auto;
   }
 }
 @media (max-width: 1170px) {
